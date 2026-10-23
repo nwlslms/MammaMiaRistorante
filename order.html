@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="kepala">
+        <div class="nama">
+            <p><span id="mamma">Mamma </span><span>Mia </span><span>Ristorante</span></p>
+        </div>
+        <div class="nav-bar">
+            <a href="index.html" id="Home">HOME</a>
+            <a href="menu.html" id="Menu">MENU</a>
+            <a href="rewards.html" id="Rewards">REWARDS</a>
+            <a href="about.html" id="About">ABOUT</a>
+            <a href="order.html" class="sekarang" id="Order">ORDER</a>
+        </div>
+    </div>
+
+    <div class="home-cont">
+        <div class="headline" id="headline-order">
+            <div class="headline-content">
+                <h1><span id="mamma">Order</span></h1>
+                <p>Grab an <span id="mamma">authentic</span> Italian dish now!</p>
+            </div>
+        </div>
+
+        <div class="formulir-order">
+            <div class="orderan">
+                <form action="" id="formulir" novalidate>
+
+                    <div class="identitas">
+                        <h1>Customer Identity</h1>
+                        <div class="identitas-form">
+                            <div>
+                                <label for="nama">Full Name</label>
+                                <input type="text" name="nama" id="nama" placeholder="Enter your name" />
+                                <span class="err-msg" id="err-nama">Name must be at least 3 letters (alphabets
+                                    only).</span>
+                            </div>
+                            <div>
+                                <label for="telepon">Phone Number</label>
+                                <input type="tel" name="telepon" id="telepon" placeholder="08XXXXXXXXX" />
+                                <span class="err-msg" id="err-telepon">Enter a valid phone number (10–13 digits,
+                                    starting with 0).</span>
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="your.email@example.com" />
+                                <span class="err-msg" id="err-email">Please enter a valid email address.</span>
+                            </div>
+                            <div>
+                                <label for="umur">Age</label>
+                                <input type="number" name="umur" id="umur" placeholder="Enter your age" min="1"
+                                    max="120" />
+                                <span class="err-msg" id="err-umur">Age must be at least 18 years old.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gender">
+                        <h1>Gender</h1>
+                        <div class="gender-form">
+                            <div class="pilihan-service">
+                                <input type="radio" name="gender" id="gender-m" value="male" />
+                                <label for="gender-m">👨 Male</label>
+                            </div>
+                            <div class="pilihan-service">
+                                <input type="radio" name="gender" id="gender-f" value="female" />
+                                <label for="gender-f">👩 Female</label>
+                            </div>
+                            <div class="pilihan-service">
+                                <input type="radio" name="gender" id="gender-o" value="other" />
+                                <label for="gender-o">🧑 Other</label>
+                            </div>
+                        </div>
+                        <span class="err-msg" id="err-gender">Please select your gender.</span>
+                    </div>
+
+                    <div class="opsi">
+                        <h1>Service Option</h1>
+                        <div class="opsi-form">
+                            <div class="pilihan-service">
+                                <input type="radio" name="service-type" id="type-1" value="pick-up" />
+                                <label for="type-1">🏃 Pick Up</label>
+                            </div>
+                            <div class="pilihan-service">
+                                <input type="radio" name="service-type" id="type-2" value="dine-in" />
+                                <label for="type-2">🍽️ Dine In</label>
+                            </div>
+                            <div class="pilihan-service">
+                                <input type="radio" name="service-type" id="type-3" value="delivery" />
+                                <label for="type-3">🛵 Delivery</label>
+                            </div>
+                        </div>
+                        <span class="err-msg" id="err-service">Please select a service option.</span>
+                    </div>
+
+                    <div class="order-detail">
+                        <h1>Order Details</h1>
+                        <div class="order-form">
+                            <label for="dish">Choose Menu</label>
+                            <select name="dish" id="dish">
+                                <option value="">Select a dish</option>
+                                <optgroup label="Appetizer">
+                                    <option value="bruschetta">Bruschetta – IDR 50.000</option>
+                                    <option value="salad">Caprese Salad – IDR 75.000</option>
+                                    <option value="lasagna">Lasagna al Forno – IDR 95.000</option>
+                                </optgroup>
+                                <optgroup label="Main Dish">
+                                    <option value="risotto">Mushroom Risotto – IDR 85.000</option>
+                                    <option value="pizza">Signature Pizza – IDR 120.000</option>
+                                    <option value="carbonara">Fettuccine Carbonara – IDR 90.000</option>
+                                    <option value="margherita">Margherita Pizza – IDR 135.000</option>
+                                    <option value="buco">Osso Buco – IDR 135.000</option>
+                                </optgroup>
+                                <optgroup label="Dessert">
+                                    <option value="tiramisu">Tiramisu – IDR 75.000</option>
+                                    <option value="cotta">Panna Cotta – IDR 50.000</option>
+                                </optgroup>
+                            </select>
+                            <span class="err-msg" id="err-dish">Please select a menu item.</span>
+                        </div>
+                        <div class="topping-form">
+                            <p>Extra Toppings</p>
+                            <div class="pilihan"><input type="checkbox" name="c1" id="c1" value="cheese" /><label
+                                    for="c1">Extra Cheese</label></div>
+                            <div class="pilihan"><input type="checkbox" name="c2" id="c2" value="truffle" /><label
+                                    for="c2">Truffle Oil</label></div>
+                            <div class="pilihan"><input type="checkbox" name="c3" id="c3" value="saus" /><label
+                                    for="c3">Authentic Sauce</label></div>
+                            <div class="pilihan"><input type="checkbox" name="c4" id="c4" value="wo" /><label
+                                    for="c4">No Extras</label></div>
+                            <span class="err-msg" id="err-topping">Please select at least one topping option.</span>
+                        </div>
+                        <div class="utensil-form">
+                            <p>Eating Utensils</p>
+                            <div class="pilihan"><input type="checkbox" name="u1" id="u1" value="fork" /><label
+                                    for="u1">🍴 Fork</label></div>
+                            <div class="pilihan"><input type="checkbox" name="u2" id="u2" value="spoon" /><label
+                                    for="u2">🥄 Spoon</label></div>
+                            <div class="pilihan"><input type="checkbox" name="u3" id="u3" value="knife" /><label
+                                    for="u3">🔪 Knife</label></div>
+                            <div class="pilihan"><input type="checkbox" name="u4" id="u4" value="napkin" /><label
+                                    for="u4">🧻 Napkin</label></div>
+                            <div class="pilihan"><input type="checkbox" name="u5" id="u5" value="wo" /><label
+                                    for="u5">No Utensil</label></div>
+                            <span class="err-msg" id="err-utensil">Please select at least one utensil option.</span>
+                        </div>
+                        <div class="request">
+                            <p>Optional Request</p>
+                            <textarea name="req" id="req" placeholder="Optional request…" maxlength="200"></textarea>
+                            <span class="err-msg" id="err-req">Notes cannot exceed 200 characters.</span>
+                        </div>
+                    </div>
+
+                    <div class="pembayaran">
+                        <h1>Payment Method</h1>
+                        <div class="opsi-pembayaran">
+                            <label for="metode-pembayaran">Select Method</label>
+                            <select name="metode-pembayaran" id="metode-pembayaran">
+                                <option value="">Choose payment method</option>
+                                <optgroup label="E-Wallet">
+                                    <option value="gopay">GoPay</option>
+                                    <option value="sopi">Shopee Pay</option>
+                                    <option value="dana">Dana</option>
+                                    <option value="ovo">OVO</option>
+                                </optgroup>
+                                <optgroup label="QRIS">
+                                    <option value="qris">QRIS</option>
+                                </optgroup>
+                                <optgroup label="Virtual Account">
+                                    <option value="bca">Bank BCA</option>
+                                    <option value="mandiri">Bank Mandiri</option>
+                                    <option value="bni">Bank BNI</option>
+                                </optgroup>
+                            </select>
+                            <span class="err-msg" id="err-payment">Please select a payment method.</span>
+                        </div>
+                    </div>
+
+                    <div class="pemastian">
+                        <div class="agreement">
+                            <div class="pilihan">
+                                <input type="checkbox" name="setuju" id="setuju" value="setuju" />
+                                <label for="setuju">I agree with the order I have placed.</label>
+                            </div>
+                            <span class="err-msg" id="err-setuju">You must agree before submitting.</span>
+                            <button type="submit">Submit My Order</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="toast">✓ Order placed successfully!</div>
+    </div>
+
+    <div class="kaki">
+        <div class="informasi">
+            <div class="trademark">
+                <p><span id="mamma">Mamma</span> Mia Ristorante</p>
+                <p>est. 2026</p>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About</a>
+                <a href="order.html">Order</a>
+            </div>
+            <div class="kontak">
+                <p>Jl. Adalah pokoknya No. 1</p>
+                <p>+62 123-4567-8910</p>
+                <p>mamma.ristorante@gmail.com</p>
+            </div>
+            <div class="jam">
+                <p>Mon - Fri: 09:00 - 21:00</p>
+                <p>Sat - Sun: 08:00 - 23:00</p>
+            </div>
+        </div>
+        <p class="tdmk">&copy; Mamma Mia Ristorante</p>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
